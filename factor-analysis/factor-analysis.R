@@ -5,10 +5,17 @@ library(psych)
 library(GPArotation)
 data(bfi)
 
-dim(bfi)
+data_set = bfi[1:25] # excluding sex,academic background and age
 
-data <- bfi
+####MAP/BIC####
+# https://link.springer.com/article/10.1007/BF02293557
+VSS( data_set, n = 8 ) # n is the number of factors than expected
+# > MAP 5 factors 
 
-data
+####factor load####
+result = fa( date_set, nfactors = 5, fm = "minres", rotate = "promax", use = "complete.obs")
+print(result, digits = 3, sort = T)
 
-write.csv(data, file = "date/r_sample_data.csv", row.names = FALSE)
+fa.diagram(result)
+
+print(result$loadings, digits = 2, cutoff = 0.3)
