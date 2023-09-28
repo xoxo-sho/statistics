@@ -11,9 +11,9 @@ $$
 
 $$
 \begin{align}
-\sum_{k=1}^{N}\sum_{i=1}^{n_k}\left(y_i^{\left( k \right)} - \bar{y} \right)^2 
-= \sum_{k=1}^{N}n_k\left(\bar{y}^{\left( k \right)} - \bar{y} \right)^2
-+ \sum_{k=1}^{N}\sum_{i=1}^{n_k}\left(y_i^{\left( k \right)} - \bar{y}^{\left( k \right)} \right)^2 
+\sum_{k=1}^{N}\sum_{i=1}^{n_k}\left(y_i^{\left( k \right)} - \bar{y} \right)^2 =
+\sum_{k=1}^{N}n_k\left(\bar{y}^{\left( k \right)} - \bar{y} \right)^2 +
+\sum_{k=1}^{N}\sum_{i=1}^{n_k}\left(y_i^{\left( k \right)} - \bar{y}^{\left( k \right)} \right)^2 
 \end{align}
 $$
 
