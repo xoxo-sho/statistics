@@ -16,15 +16,15 @@ $$
 &\boldsymbol{a} = \left(
 a_1 \cdots a_N
 \right)
-\quad : \quad regression \quad coefficient \\
+\quad : \quad \text{regression coefficient} \\
 \\
 &X = \left(
 X_1 , \cdots, X_N 
-\right) \quad : \quad  explanatory \quad variables \\
+\right) \quad : \quad \text{explanatory variables} \\
 \\
-\boldsymbol{b} \left(
+&\boldsymbol{b} = \left(
 b \cdots b
-\right) \quad : \quad constant \quad term
+\right) \quad : \quad \text{constant term} \\
 &MSE = \frac{1}{N} \sum_{i=1}^{n} \left( y_i -\left(a_{i1} + \cdots + a_{iN} \right) \right)^2
 \end{align}
 $$
@@ -32,7 +32,7 @@ $$
 <br>
 
 - カテゴリ変数を説明変数として、他の変数への影響を調べる。<br>
-\>>> one-hot本数を用いた重回帰分析
+\>>> one-hot変数を用いた重回帰分析
 
 - 定数項bは全目的変数共通<br>
 \>>> 平均的な値を補う数字（今回はprice）
