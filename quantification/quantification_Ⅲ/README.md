@@ -6,8 +6,8 @@ $$
 \large
 \begin{align}
 \rho &= \text{Corr} \left( \tilde{a} , \tilde{b}\right) 
-= \frac{\text{Cov} \left( \tilde{a} , \tilde{b}\right)}{\sqrt{\vphantom{V[\tilde{a}]V[\tilde{b}]}V[\tilde{a}]} \sqrt{V[\tilde{b}]}}
-= \frac{{}^t b Z a}{\sqrt{\vphantom{V[\tilde{a}]V[\tilde{b}]}{}^taXa}\sqrt{\vphantom{V[\tilde{a}]V[\tilde{b}]}{}^tbYb}}
+= \frac{\text{Cov} \left( \tilde{a} , \tilde{b}\right)}{\sqrt{\mathstrut V[\tilde{a}]} \sqrt{\mathstrut V[\tilde{b}]}}
+= \frac{{}^t b Z a}{\sqrt{\mathstrut {}^taXa}\sqrt{\mathstrut {}^tbYb}}
 \end{align}
 $$
 
@@ -32,7 +32,7 @@ $$
 - 対角線にデータを並べて相関の最大化 <br>
 \>>> $\rho$ が最大になるa,bを求める <br>
 
-- $\tilde{a}$、$\tilde{b}$の平均が0の条件を設定 <br>
+- $\tilde{a}$、 $\tilde{b}$ の平均が0の条件を設定 <br>
 \>>> $V[\tilde{a}]$ = $E[{\tilde{a^2}}]$ = $\frac{1}{N}{}^taZa$（bも同様）
 
 - ${}^taXa$ = ${}^tbYb$ = 1の条件下で ${}^t b Z a$ を最大化する <br>
